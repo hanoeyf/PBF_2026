@@ -1,0 +1,1 @@
+![ Routing Dasar (Static Routing) ](image.png)
