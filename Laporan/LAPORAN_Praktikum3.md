@@ -8,3 +8,17 @@
     ![app.tsx](image-2.png)
     ![Modifikasi](image-3.png)
     ![password](image-4.png)
+4. Dynamic Routing 
+    => Modifikasi index.tsx 
+        ![Index.tsx](image-6.png)
+    => Modifikasi [id].tsx
+        cek menggunakan console.log
+        ![[id].tsx](image-5.png)
+    => Modifikasi [id].tsx agar dapat mengambil nilai dari id 
+        ![modifikasi [id].tsx](image-8.png)
+    => Uji di Browser
+        -/produk/sepatu-baru
+        ![sepatu-baru](image-9.png)
+        -/produk/baju
+        ![baju](image-10.png)
+
