@@ -23,4 +23,14 @@
         ![baju](image-10.png)
 5. Membuat Komponen Navbar 
     ![Komponen Navbar](image-11.png)
+        => Modifikasi index.tsx
+            ![index](image-14.png)
+        => Modifikasi _app.tsx
+            ![_app](image-15.png)
+        => Hasil
+            ![Navbar](image-17.png)
+            ![produk_baju](image-16.png)
+            ![setting/app](image-18.png)
+
+
 
