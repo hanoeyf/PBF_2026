@@ -4,9 +4,12 @@ import Navbar from '@/components/layouts/navbar'
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <div>
+    <main>
       <Navbar />
       <Component {...pageProps} />
-    </div>
-  )
+      <div>
+        footer
+      </div>
+    </main>
+  );
 }

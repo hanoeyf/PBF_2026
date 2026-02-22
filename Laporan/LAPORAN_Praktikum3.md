@@ -31,6 +31,11 @@
             ![Navbar](image-17.png)
             ![produk_baju](image-16.png)
             ![setting/app](image-18.png)
-
-
+6. Membuat Layout Global (App Shell)
+    ![Modifikasi index.tsx pad AppShell ](image-19.png)
+    ![Implementasi Layout di _app.tsx ](image-20.png)
+7. Implementasi Layout di _app.tsx
+    => Modifiaksi _app.tsx
+        ![hasil 1](image-21.png)
+        ![hasil 2](image-22.png)
 
