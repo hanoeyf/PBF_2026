@@ -14,4 +14,12 @@ const Appshell =  (props:AppshellProps) => {
         </main>
     );
 };
-export default Appshell;
+export default function AppShell({ children }: { children: React.ReactNode }) {
+  return (
+    <>
+      <Navbar />
+      <main>{children}</main>
+      <footer>Footer</footer>
+    </>
+  );
+}

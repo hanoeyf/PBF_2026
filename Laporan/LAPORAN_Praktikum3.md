@@ -1,3 +1,5 @@
+LAPORAN PRAKTIKUM 3
+
 1. Routing Dasar (Static Routing)
     ![1. Routing Dasar (Static Routing) ](image.png)
 2. Routing Menggunakan Folder
@@ -39,3 +41,48 @@
         ![hasil 1](image-21.png)
         ![hasil 2](image-22.png)
 
+E. Tugas Praktikum 
+    Tugas 1 – Routing 
+        1. Buat halaman: 
+            o /profile 
+                ![profile](image-23.png)
+            o /profile/edit 
+                ![edit](image-24.png)
+        2. Pastikan routing berjalan tanpa error
+            Hasil tidak error 
+    Tugas 2 – Dynamic Routing 
+        1. Buat routing: 
+        2. /blog/[slug] 
+        3. Tampilkan nilai slug di halaman 
+        ![hasil dan kode](image-25.png)
+    Tugas 3 – Layout 
+        1. Tambahkan Footer pada AppShell 
+        Modifikasi index.tsx dan _app.tsx
+            ![Modifikasi index.tsx](image-30.png)
+            ![Modifikasi _app.tsx](image-31.png)
+        2. Footer tampil di semua halaman 
+        hasil:
+            ![blog](image-26.png)
+            ![alt text](image-27.png)
+            ![profile](image-28.png)
+            ![user](image-29.png)
+F. Pertanyaan Refleksi 
+    1. Apa perbedaan routing berbasis file dan routing manual? 
+        Routing berbasis file:
+            - URL otomatis dibuat dari struktur folder
+            - Tidak perlu konfigurasi route
+            - Lebih sederhana dan cepat
+        Routing manual:
+            - Harus mendefinisikan route satu per satu
+            - Biasanya pakai library seperti React Router
+            - Lebih fleksibel tapi lebih kompleks
+    2. Mengapa dynamic routing penting dalam aplikasi web? 
+        Karena:
+            - Memungkinkan satu file menangani banyak URL
+            - Cocok untuk data dinamis 
+            - Tidak perlu buat file satu per satu
+    3. Apa keuntungan menggunakan layout global dibanding memanggil komponen satu per satu? 
+    Navbar & Footer cukup ditulis sekali
+        1. Konsisten di semua halaman
+        2. Tidak perlu import satu per satu
+        3. Kode lebih rapi dan mudah dirawat
