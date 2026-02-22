@@ -21,4 +21,6 @@
         ![sepatu-baru](image-9.png)
         -/produk/baju
         ![baju](image-10.png)
+5. Membuat Komponen Navbar 
+    ![Komponen Navbar](image-11.png)
 
