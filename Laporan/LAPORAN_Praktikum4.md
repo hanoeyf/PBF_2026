@@ -1,4 +1,5 @@
 LANGKAH PRAKTIKUM
+
 Langkah 1 – Menjalankan Project
     ![npm run dev](image-1.png)
 Langkah 2 – Membuat Catch-All Route 
@@ -40,10 +41,18 @@ Tugas 2 (Wajib)
             ![kode](image-25.png)
             ![/auth/register](image-26.png)
 Tugas 3 (Pengayaan) 
-    • Terapkan redirect otomatis ke login jika user belum login. 
+    • Terapkan redirect otomatis ke login jika user belum login.
+        ![kode](image-27.png) 
 
 F. Pertanyaan Evaluasi 
 1. Apa perbedaan [id].js dan [...slug].js? 
+    [id].js digunakan untuk menangkap satu parameter dinamis pada URL
+    Sedangkan [...slug].js  dapat menangkap lebih dari satu parameter
 2. Mengapa slug berbentuk array? 
+    karena catch-all route ([...slug]) dapat menerima jumlah segmen URL yang tidak tetap
 3. Kapan sebaiknya menggunakan Link dan router.push()? 
+    Link digunakan ketika berpindah halaman melalui klik link biasa, seperti navigasi dari Login ke Register
+    Sedangkan router.push() digunakan ketika navigasinya bersifat imperatif atau membutuhkan logika tertentu sebelum berpindah halaman, seperti setelah proses login berhasil, setelah submit form, atau untuk melakukan redirect otomatis
 4. Mengapa navigasi Next.js tidak me-refresh halaman?
+    Navigasi pada Next.js tidak me-refresh halaman karena menggunakan client-side routing.
+    Artinya, perpindahan halaman dilakukan di sisi client (browser) tanpa memuat ulang seluruh halaman dari server sehingga lebih cepat dan responsif

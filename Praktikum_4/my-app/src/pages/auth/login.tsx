@@ -5,8 +5,8 @@ const LoginPage = () => {
   const router = useRouter();
 
   const handlerLogin = () => {
-    // simulasi login berhasil
-    router.push('/produk'); // ✅ arah ke produk
+    localStorage.setItem("isLogin", "true"); 
+    router.push("/produk");
   };
 
   return (
@@ -15,6 +15,7 @@ const LoginPage = () => {
 
       <button onClick={handlerLogin}>Login</button>
       <br />
+
       <Link href="/auth/register">Ke Register</Link>
     </div>
   );
