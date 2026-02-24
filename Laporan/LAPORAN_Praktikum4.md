@@ -1,3 +1,4 @@
+LANGKAH PRAKTIKUM
 Langkah 1 – Menjalankan Project
     ![npm run dev](image-1.png)
 Langkah 2 – Membuat Catch-All Route 
@@ -20,3 +21,29 @@ Langkah 7 – Navigasi Imperatif (router.push)
     ![alt text](image-13.png)
 Langkah 8 – Simulasi Redirect (Belum Login)
     ![Modifikasi](image-14.png)
+
+TUGAS PRAKTIKUM
+
+Tugas 1 (Wajib) 
+    • Buat catch-all route: 
+    • /category/[...slug].js 
+        ![kode](image-15.png)
+    • Tampilkan seluruh parameter URL dalam bentuk list. 
+        ![hasil](image-16.png)
+Tugas 2 (Wajib) 
+    • Buat navigasi: 
+        o Login → Product (imperatif)
+            ![kode](image-24.png)
+            ![/auth/login](image-21.png)
+            ![/produk](image-23.png)
+        o Login ↔ Register (Link) 
+            ![kode](image-25.png)
+            ![/auth/register](image-26.png)
+Tugas 3 (Pengayaan) 
+    • Terapkan redirect otomatis ke login jika user belum login. 
+
+F. Pertanyaan Evaluasi 
+1. Apa perbedaan [id].js dan [...slug].js? 
+2. Mengapa slug berbentuk array? 
+3. Kapan sebaiknya menggunakan Link dan router.push()? 
+4. Mengapa navigasi Next.js tidak me-refresh halaman?
