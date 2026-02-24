@@ -12,3 +12,5 @@ Langkah 4 – Optional Catch-All Route
 Langkah 5 – Validasi Parameter
     Tambahkan validasi agar tidak error saat slug kosong:
     ![Modifikasi](image-10.png)
+Langkah 6 – Membuat Halaman Login & Register
+    ![Login dan Register](image-11.png)

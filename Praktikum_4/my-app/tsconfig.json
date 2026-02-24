@@ -28,7 +28,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "src/pages/auth/resgister/tsx"  ],
   "exclude": [
     "node_modules"
   ]
