@@ -14,3 +14,7 @@ Langkah 5 – Validasi Parameter
     ![Modifikasi](image-10.png)
 Langkah 6 – Membuat Halaman Login & Register
     ![Login dan Register](image-11.png)
+Langkah 7 – Navigasi Imperatif (router.push)
+    ![login](image-12.png)
+     klik button login maka akan menuju /produk 
+    ![alt text](image-13.png)
