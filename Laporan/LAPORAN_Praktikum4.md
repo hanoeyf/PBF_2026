@@ -9,3 +9,6 @@ Langkah 3 – Pengujian Catch-All Route
 Langkah 4 – Optional Catch-All Route
     ![Rename file slug](image-9.png)
     Halaman dapat diakses meskipun tanpa parameter. 
+Langkah 5 – Validasi Parameter
+    Tambahkan validasi agar tidak error saat slug kosong:
+    ![Modifikasi](image-10.png)
