@@ -18,3 +18,5 @@ Langkah 7 – Navigasi Imperatif (router.push)
     ![login](image-12.png)
      klik button login maka akan menuju /produk 
     ![alt text](image-13.png)
+Langkah 8 – Simulasi Redirect (Belum Login)
+    ![Modifikasi](image-14.png)
