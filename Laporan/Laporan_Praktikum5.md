@@ -12,8 +12,11 @@ LANGKAH PRAKTIKUM
         ![hasil](image-3.png)
 3. Styling untuk Pages (CSS Module)
     • Modifikasi login.module.css
+        ![login.module.css](image-4.png)
     • Modifikasi login.tsx
+        ![login.tsx](image-5.png)
     • Jalankan browser
+        ![halaman login](image-7.png)
 4. Conditional Rendering Navbar (Tanpa Navbar di Login)
     • Modifikasi index.tsx pada folder Appsheel
     • Jalankan browser

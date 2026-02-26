@@ -1,24 +1,22 @@
-import { useRouter } from "next/router";
 import Link from "next/link";
+import { useRouter } from "next/router";
+import styles from "./login.module.css";
 
-const LoginPage = () => {
-  const router = useRouter();
+const halamanLogin = () => {
+  const { push } = useRouter();
 
   const handlerLogin = () => {
-    localStorage.setItem("isLogin", "true"); 
-    router.push("/produk");
+    push("/produk");
   };
 
   return (
-    <div>
-      <h1>Login</h1>
-
-      <button onClick={handlerLogin}>Login</button>
+    <div className={styles.login}>
+      <h1>Halaman Login</h1>
+      <button onClick={() => handlerLogin()}>Login</button>
       <br />
-
-      <Link href="/auth/register">Ke Register</Link>
+      <Link href="/auth/register">Ke Halaman Register</Link>
     </div>
   );
 };
 
-export default LoginPage;
+export default halamanLogin;
