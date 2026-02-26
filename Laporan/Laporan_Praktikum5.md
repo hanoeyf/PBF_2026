@@ -34,7 +34,9 @@ LANGKAH PRAKTIKUM
         ![Hasil](image-12.png)
 6. Inline Styling (CSS-in-JS)
     • Modifikasi index.tsx pada folder views/auth/login
+        ![Modifikasi](image-13.png)
     • Jalankan browser
+        ![Hasil](image-14.png)
 7. Kombinasi Global CSS + CSS Module
     • Modifikasi global.css
     • Modifikasi index.tsx pada folder components/layouts/navbar
