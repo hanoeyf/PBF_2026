@@ -51,10 +51,12 @@ LANGKAH PRAKTIKUM
     • Modifikasi login.module.scss
         ![Modifikasi](image-20.png)
     • Jalankan browser
-        ![Hasil](image-21.png)
+        ![Hasil](image-24.png)
 9. Tailwind CSS
     • Modifikasi index.tsx pada folder auth/login/
+        ![Modifikasi](image-22.png)
     • Jalankan browser
+        ![Hasil](image-21.png)
 
 TUGAS PRAKTIKUM
 
