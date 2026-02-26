@@ -19,7 +19,9 @@ LANGKAH PRAKTIKUM
         ![halaman login](image-7.png)
 4. Conditional Rendering Navbar (Tanpa Navbar di Login)
     • Modifikasi index.tsx pada folder Appsheel
+        ![index.tsx](image-6.png)
     • Jalankan browser
+        ![halaman login](image-8.png)
 5. Refactoring Struktur Project (Best Practice)
     • Modifikasi login.module.css pada folder view/auth/login/
     • Login.module.css pada folder pages/auth dihapus
