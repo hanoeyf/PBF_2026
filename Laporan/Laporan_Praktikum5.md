@@ -39,12 +39,19 @@ LANGKAH PRAKTIKUM
         ![Hasil](image-14.png)
 7. Kombinasi Global CSS + CSS Module
     • Modifikasi global.css
+        ![Modifikasi](image-15.png)
     • Modifikasi index.tsx pada folder components/layouts/navbar
+        ![Modifikasi](image-16.png)
 8. SCSS (SASS)
+    ![install sass](image-17.png)
     • Modifikasi colors.scss
+        ![Modifikasi](image-18.png)
     • Modifikasi index.tsx
+        ![Modifikasi](image-19.png)
     • Modifikasi login.module.scss
+        ![Modifikasi](image-20.png)
     • Jalankan browser
+        ![Hasil](image-21.png)
 9. Tailwind CSS
     • Modifikasi index.tsx pada folder auth/login/
     • Jalankan browser
