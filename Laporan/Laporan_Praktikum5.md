@@ -24,10 +24,14 @@ LANGKAH PRAKTIKUM
         ![halaman login](image-8.png)
 5. Refactoring Struktur Project (Best Practice)
     • Modifikasi login.module.css pada folder view/auth/login/
+        ![Modifikasi](image-9.png)
     • Login.module.css pada folder pages/auth dihapus
     • Modifikasi login.tsx pada folder pages/auth
+        ![Modifikasi](image-10.png)
     • Modifikasi index.tsx pada folder views/auth/login
+        ![Modifikasi](image-11.png)
     • Jalankan browser
+        ![Hasil](image-12.png)
 6. Inline Styling (CSS-in-JS)
     • Modifikasi index.tsx pada folder views/auth/login
     • Jalankan browser
