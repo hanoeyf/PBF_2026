@@ -61,19 +61,34 @@ LANGKAH PRAKTIKUM
 TUGAS PRAKTIKUM
 
 Tugas 1
-• Buat halaman Register
-• Gunakan CSS Module
+    • Buat halaman Register
+        ![halaman register](image.png)
+    • Gunakan CSS Module
+        ![kode](image-1.png)
 Tugas 2
 • Refactor halaman Produk ke folder views
 • Pisahkan Hero Section dan Main Section
+    ![folder](image-4.png)
 Tugas 3
 • Terapkan Tailwind CSS
 • Gunakan minimal 5 utility class
+    ![KodeHerSection](image-3.png)
+    ![KodeMainSection](image-2.png)
+    ![Hasil 1](image-5.png)
+    ![Hasil 2](image-6.png)
 
 F. Pertanyaan Refleksi
 1. Kapan sebaiknya menggunakan CSS Module dibanding Global CSS?
+    CSS Module sebaiknya digunakan ketika ingin memberikan styling khusus pada satu komponen saja agar tidak mempengaruhi komponen lain. CSS Module bersifat lokal (scoped), sehingga menghindari bentrok nama class.
+    Sedangkan Global CSS digunakan untuk styling yang berlaku untuk seluruh aplikasi, seperti pengaturan font, warna dasar, dan reset CSS.
 2. Apa kelemahan inline styling?
+    Tidak dapat menggunakan pseudo-class seperti :hover
+    Tidak mendukung media query
+    Kurang efisien untuk penggunaan berulang
+    Membuat kode kurang rapi jika digunakan terlalu banyak
 3. Mengapa SCSS cocok untuk project skala besar?
+    SCSS cocok untuk project skala besar karena memiliki fitur tambahan seperti variable, nesting, dan mixin. Fitur tersebut membantu pengelolaan kode agar lebih terstruktur dan mudah dipelihara.
 4. Apa keunggulan Tailwind dibanding CSS tradisional?
+    Tailwind memiliki keunggulan karena menggunakan utility class yang dapat langsung digunakan pada elemen HTML. Hal ini mempercepat proses pengembangan dan menjaga konsistensi desain
 
     
