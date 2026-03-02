@@ -1,6 +1,8 @@
 Langkah Pengerjaan
 Langkah 1 – Menjalankan Project
 Langkah 2 – Membuat API Produk
+    ![Kode](image.png)
+    ![Halmana Browser](image-1.png)
 Langkah 3 – Fetch Data API di Frontend
     • Modifikasi kode
     • Jalankan browser
