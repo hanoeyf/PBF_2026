@@ -40,6 +40,8 @@ Tugas 1 (Wajib)
 Tugas 2 (Wajib)
     • Custom warna, font, dan layout halaman 404
     • Navbar tidak tampil di halaman 404
+        ![Kode](image-15.png)
+        ![Hasil](image-14.png)
 Tugas 3 (Pengayaan)
     • Tambahkan tombol:
         o “Kembali ke Home”
