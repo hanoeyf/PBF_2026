@@ -5,8 +5,9 @@ Langkah 2 – Membuat API Produk
     ![Halmana Browser](image-1.png)
 Langkah 3 – Fetch Data API di Frontend
     • Modifikasi kode
+        ![Kode](image-2.png)
     • Jalankan browser
-
+        ![Halaman Browser](image-3.png)
 Integrasi Firebase
 Langkah 5 – Setup Firebase
 Langkah 6 – Install Firebase
