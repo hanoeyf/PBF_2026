@@ -35,6 +35,8 @@ Tugas 1 (Wajib)
     o Judul halaman
     o Deskripsi singkat
     o Gambar ilustrasi
+        ![Modifikasi Kode](image-13.png)
+        ![Halaman](image-12.png)
 Tugas 2 (Wajib)
     • Custom warna, font, dan layout halaman 404
     • Navbar tidak tampil di halaman 404
