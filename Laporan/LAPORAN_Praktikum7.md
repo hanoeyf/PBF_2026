@@ -13,6 +13,8 @@ Langkah 5 – Setup Firebase
     ![Firebase](image-4.png)
     ![Collection products](image-5.png)
 Langkah 6 – Install Firebase
+    ![Install firebase](image-6.png)
+    ![firebase.ts](image-7.png)
 Langkah 7 – Konfigurasi Environment
 Langkah 8 – Konfigurasi Firebase
 Langkah 9 – Ambil Data dari Firestore
