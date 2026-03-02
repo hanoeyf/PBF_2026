@@ -1,0 +1,33 @@
+Langkah Pengerjaan
+Langkah 1 – Menjalankan Project
+Langkah 2 – Membuat API Produk
+Langkah 3 – Fetch Data API di Frontend
+    • Modifikasi kode
+    • Jalankan browser
+
+Integrasi Firebase
+Langkah 5 – Setup Firebase
+Langkah 6 – Install Firebase
+Langkah 7 – Konfigurasi Environment
+Langkah 8 – Konfigurasi Firebase
+Langkah 9 – Ambil Data dari Firestore
+Langkah 10 – API Mengambil Data Firebase
+
+Tugas Praktikum
+Tugas 1 (Wajib)
+• Tambahkan minimal 3 data produk di Firestore
+• Pastikan data tampil di halaman produk
+Tugas 2 (Wajib)
+• Tambahkan field baru:
+o category
+
+• Tampilkan category di frontend
+Tugas 3 (Pengayaan)
+• Tambahkan tombol Refresh Data
+• Gunakan fetch ulang tanpa reload halaman
+
+G. Pertanyaan Evaluasi
+1. Apa fungsi API Routes pada Next.js?
+2. Mengapa .env.local tidak boleh di-push ke repository?
+3. Apa perbedaan data statis dan data dinamis?
+4. Mengapa Next.js disebut framework fullstack?
