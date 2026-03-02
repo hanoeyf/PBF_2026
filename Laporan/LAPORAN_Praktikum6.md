@@ -48,9 +48,13 @@ Tugas 3 (Pengayaan)
     • Gunakan navigasi Next.js (Link)
     ![Kode](image-16.png)
     ![Halaman](image-17.png)
-    
+
 F. Pertanyaan Evaluasi
 1. Apa fungsi utama _document.js?
+    _document.js berfungsi untuk mengatur struktur dasar seperti <html>, <head>, dan <body>. Biasanya digunakan untuk custom font, meta tag global, atau pengaturan server-side rendering
 2. Mengapa <title> tidak disarankan di _document.js?
+    Karena _document.js hanya dirender sekali saat server-side. Jika <title> ditaruh di sana, maka semua halaman akan memiliki title yang sama. Untuk mengatur title per halaman, sebaiknya gunakan Head dari next/head
 3. Apa perbedaan halaman biasa dan halaman 404.js?
+    Halaman biasa dibuat untuk route tertentu (misalnya /about, /produk). Sedangkan 404.js adalah halaman khusus yang otomatis ditampilkan Next.js ketika route tidak ditemukan
 4. Mengapa folder public tidak perlu di-import?
+    Karena semua file di dalam folder public bisa langsung diakses melalui path URL
