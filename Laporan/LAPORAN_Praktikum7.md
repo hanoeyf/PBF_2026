@@ -10,6 +10,8 @@ Langkah 3 – Fetch Data API di Frontend
         ![Halaman Browser](image-3.png)
 Integrasi Firebase
 Langkah 5 – Setup Firebase
+    ![Firebase](image-4.png)
+    ![Collection products](image-5.png)
 Langkah 6 – Install Firebase
 Langkah 7 – Konfigurasi Environment
 Langkah 8 – Konfigurasi Firebase
