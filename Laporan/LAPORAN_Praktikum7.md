@@ -16,6 +16,7 @@ Langkah 6 – Install Firebase
     ![Install firebase](image-6.png)
     ![firebase.ts](image-7.png)
 Langkah 7 – Konfigurasi Environment
+    ![.env.local](image-8.png)
 Langkah 8 – Konfigurasi Firebase
 Langkah 9 – Ambil Data dari Firestore
 Langkah 10 – API Mengambil Data Firebase
