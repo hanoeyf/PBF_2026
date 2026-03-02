@@ -24,7 +24,9 @@ Langkah 9 – Ambil Data dari Firestore
 Langkah 10 – API Mengambil Data Firebase
     ![Modifikasi Kode](image-11.png)
     ![Halaman browser](image-12.png)
-    
+    ![Modifikasi Kode](image-13.png)
+    ![Halaman /produk](image-14.png)
+
 Tugas Praktikum
 Tugas 1 (Wajib)
 • Tambahkan minimal 3 data produk di Firestore
