@@ -20,8 +20,11 @@ Langkah 7 – Konfigurasi Environment
 Langkah 8 – Konfigurasi Firebase
     ![Modifikasi kode](image-9.png)
 Langkah 9 – Ambil Data dari Firestore
+    ![Modifikasi Kode](image-10.png)
 Langkah 10 – API Mengambil Data Firebase
-
+    ![Modifikasi Kode](image-11.png)
+    ![Halaman browser](image-12.png)
+    
 Tugas Praktikum
 Tugas 1 (Wajib)
 • Tambahkan minimal 3 data produk di Firestore
