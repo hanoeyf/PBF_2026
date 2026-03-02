@@ -1,10 +1,15 @@
 LANGKAH PRAKTIKUM
 Langkah 1 – Menjalankan Project
 Langkah 2 – Membuat Custom Document
+    ![Kode](image.png)
 Langkah 3 – Pengaturan Title per Halaman
+    ![Kode](image-1.png)
+    ![Hasil](image-2.png)
 Langkah 4 – Membuat Custom Error Page (404)
+    ![Kode](image-3.png)
+    ![Halaman](image-4.png)
 Langkah 5 – Styling Halaman 404
-    • Tambahkan style:
+    • Tambahkan style:  
     • Modifikasi kode pada pages/404.tsx:
     • Jalankan browser
     • Jika dijalankan masih ada navbarnya , untuk itu lakukan Handling Navbar di Halaman 404
