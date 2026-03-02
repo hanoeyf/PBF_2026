@@ -46,7 +46,9 @@ Tugas 3 (Pengayaan)
     • Tambahkan tombol:
         o “Kembali ke Home”
     • Gunakan navigasi Next.js (Link)
-
+    ![Kode](image-16.png)
+    ![Halaman](image-17.png)
+    
 F. Pertanyaan Evaluasi
 1. Apa fungsi utama _document.js?
 2. Mengapa <title> tidak disarankan di _document.js?
