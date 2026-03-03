@@ -1,36 +1,45 @@
-import { useRouter } from "next/router";
-import { use, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 type ProductType = {
-    id: string;
-    name: string;
-    price: number;
-    size: string;
+  id: string;
+  name: string;
+  price: number;
+  size: string;
+  category: string;
 };
 const Kategori = () => {
-  const [products, setProducts] = useState([]);
-
+  const [products, setProducts] = useState<ProductType[]>([]);
+  const [loading, setLoading] = useState(false);
+  const fetchProducts = async () => {
+    try {
+      setLoading(true);
+      const response = await fetch("/api/produk");
+      const responsedata = await response.json();
+      setProducts(responsedata.data);
+    } catch (error) {
+      console.error("Error fetching products:", error);
+    } finally {
+      setLoading(false);
+    }
+  };
   useEffect(() => {
-    fetch("/api/produk")
-      .then((response) => response.json())
-      .then((responsedata) => {
-        setProducts(responsedata.data);
-      })
-      .catch((error) => {
-        console.error("Error fetching products:", error);
-  });
-},[]);
+    fetchProducts();
+  }, []);
 
   return (
     <div>
       <h1>Daftar Produk</h1>
-      {products.map((product: ProductType) => (
-          <div key={product.id}>
-            <h2>{product.name}</h2>
-            <p>Harga: {product.price}</p>
-            <p>Ukuran: {product.size}</p>
-          </div>
-        ))}
+      <button onClick={fetchProducts} disabled={loading}>
+        {loading ? "Loading..." : "Refresh Data"}
+      </button>
+      {products.map((product) => (
+        <div key={product.id}>
+          <h2>{product.name}</h2>
+          <p>Harga: {product.price}</p>
+          <p>Ukuran: {product.size}</p>
+          <p>Kategori: {product.category}</p>
+        </div>
+      ))}
     </div>
   );
 };
