@@ -7,8 +7,11 @@ Bagian 2 – Implementasi CSR dengan useEffect
     Jalankan browser http://localhost:3000/produk
         ![Hasil Broswer](image-2.png)
     Modifikasi produk.modules.scss
+        ![Kode](image-3.png)
     Modifikasi Pada file index.tsx pada folder pages/views/product
+        ![Modifikasi Kode](image-5.png)
     Jalankan Browser
+        ![Halaman Browser](image-4.png)
 Bagian 3 – Implementasi Skeleton Loading
     Modfikasi file index.tsx pada folder views/product/index.tsx
     Modifikasi file product.module.scss
