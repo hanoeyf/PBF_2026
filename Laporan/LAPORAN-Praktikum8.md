@@ -32,6 +32,7 @@ Bagian 5 – Implementasi SWR
     Modifikasi file fetcher.ts
         ![Kode](image-16.png)
     Modifikasi file index.tsx pada folder pages/produk
+        ![Modifikasi kode](image-17.png)
 
 Tugas Praktikum
 Tugas Individu
