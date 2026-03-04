@@ -38,73 +38,15 @@ Tugas Praktikum
 Tugas Individu
 1. Jelaskan perbedaan:
     o Client Side Rendering
+        Data diambil oleh browser (client) setelah halaman terbuka
     o Server Side Rendering
+        Data diambil di server setiap kali user request halaman
     o Static Site Generation
+        Data diambil saat build project
 2. Buat halaman produk dengan:
     o Skeleton loading
     o Animasi
+    ![Halaman Browser](image-18.png)
 3. Refactor kode dari useEffect menjadi SWR.
 
-type ProductType = {
-    id: string;
-    name: string;
-    price: number;
-    image: string;
-    category: string;
-};
-
-const TampilanProduk = ({products}: { products: ProductType[] }) => {
-    return (
-        <div>
-            <h1>Daftar Produk</h1>
-
-            {products.map((products: ProductType) => (
-                <div key={products.id}>
-                    <h2>nama :{products.name}</h2>
-                    <p>Harga: {products.price}</p>
-                    <img src={products.image} alt={products.name} width={200} />
-                    <p>Kategori: {products.category}</p>
-                </div>
-            ))}
-        </div>
-    );
-};
-
-export default TampilanProduk;
-
-import { useEffect, useState } from "react";
-import  TampilanProduk from "../views/product";
-
-const kategori = () => {
-  const [products, setProducts] = useState([]);
-  // const [loading, setLoading] = useState(false);
-  // const fetchProducts = async () => {
-  //   try {
-  //     setLoading(true);
-  //     const response = await fetch("/api/produk");
-  //     const responsedata = await response.json();
-  //     setProducts(responsedata.data);
-  //   } catch (error) {
-  //     console.error("Error fetching products:", error);
-  //   } finally {
-  //     setLoading(false);
-  //   }
-  // };
-  useEffect(() => {
-    fetch("/api/produk")
-      .then((response) => response.json())
-      .then((responsedata) => {
-        setProducts(responsedata.data);
-  })
-  .catch((error) => {
-    console.error("Error fetching products:", error);
-  });
-  }, []);
-  return (
-    <div>
-      <TampilanProduk products={products} />
-    </div>
-  );
-};
-
-export default kategori;
+![Halaman broswer](image-19.png)
