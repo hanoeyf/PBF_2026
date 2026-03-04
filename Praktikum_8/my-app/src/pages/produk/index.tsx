@@ -1,8 +1,12 @@
 import { useEffect, useState } from "react";
 import TampilanProduk from "../../views/product";
+import useSWR from "swr";
+
+const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
 const kategori = () => {
   const [products, setProducts] = useState([]);
+  const { data, error, isLoading } = useSWR("/api/produk", fetcher);
   // const [loading, setLoading] = useState(false);
   // const fetchProducts = async () => {
   //   try {
@@ -16,19 +20,9 @@ const kategori = () => {
   //     setLoading(false);
   //   }
   // };
-  useEffect(() => {
-    fetch("/api/produk")
-      .then((response) => response.json())
-      .then((responsedata) => {
-        setProducts(responsedata.data);
-  })
-  .catch((error) => {
-    console.error("Error fetching products:", error);
-  });
-  }, []);
   return (
     <div>
-      <TampilanProduk products={products} />
+      <TampilanProduk products={isLoading ? [] : data.data} />
     </div>
   );
 };

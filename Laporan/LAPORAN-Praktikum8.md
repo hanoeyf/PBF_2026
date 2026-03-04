@@ -26,8 +26,11 @@ Bagian 3 – Implementasi Skeleton Loading
 Bagian 5 – Implementasi SWR
     https://swr.vercel.app/
     Install SWR
+        ![install](image-14.png)
     Buka dan modifkasi file index.tsx pada folder pages/product/
+        ![Modifikasi Kode](image-15.png)
     Modifikasi file fetcher.ts
+        ![Kode](image-16.png)
     Modifikasi file index.tsx pada folder pages/produk
 
 Tugas Praktikum
