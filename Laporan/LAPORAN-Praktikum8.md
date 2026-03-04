@@ -14,8 +14,11 @@ Bagian 2 – Implementasi CSR dengan useEffect
         ![Halaman Browser](image-4.png)
 Bagian 3 – Implementasi Skeleton Loading
     Modfikasi file index.tsx pada folder views/product/index.tsx
+        ![Modifikasi Kode](image-11.png)
     Modifikasi file product.module.scss
+        ![Modifikasi Kode](image-10.png)
     Jalankan browser
+        ![Halmana Browser](image-9.png)
     Modifikasi pada index.tsx pada folder views/product/index.tsx
     Jalankan browser
 Bagian 5 – Implementasi SWR
