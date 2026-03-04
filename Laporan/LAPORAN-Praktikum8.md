@@ -20,7 +20,9 @@ Bagian 3 – Implementasi Skeleton Loading
     Jalankan browser
         ![Halmana Browser](image-9.png)
     Modifikasi pada index.tsx pada folder views/product/index.tsx
+        ![Modifikasi Kode](image-12.png)
     Jalankan browser
+        ![Halaman Browser](image-13.png)
 Bagian 5 – Implementasi SWR
     https://swr.vercel.app/
     Install SWR

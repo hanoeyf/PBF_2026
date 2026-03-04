@@ -12,7 +12,7 @@ const TampilanProduk = ({ products }: { products: ProductType[] }) => {
     <div className={styles.produk}>
       <h1 className={styles.produk__title}>Daftar Produk</h1>
       <div className={styles.produk__content}>
-        {/* {products.map((products: ProductType) => (
+        {products.map((products: ProductType) => (
           <div key={products.id} className={styles.produk__content__item}>
             
             <div className={styles.produk__content__item__image}>
@@ -32,7 +32,7 @@ const TampilanProduk = ({ products }: { products: ProductType[] }) => {
             </p>
 
           </div>
-        ))} */}
+        ))}
 
         <div className={styles.produk__content__skeleton}>
             <div className={styles.produk__content__skeleton__image}></div>
