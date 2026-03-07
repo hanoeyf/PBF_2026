@@ -10,7 +10,9 @@ Bagian 2 – Implementasi getServerSideProps pada server.tsx
     ![Halaman Browser](image-3.png)
 Bagian 3 – Refactor Type ( produk type )
     Modifikasi Product.type.ts
+        ![Kode](image-4.png)
     Modifikasi file server.tsx 
+        ![Kode](image-5.png)
 Bagian 4 – Uji Perbedaan SSR vs CSR
 
 Tugas Praktikum
