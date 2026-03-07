@@ -5,7 +5,9 @@ Bagian 1 – Setup Halaman SSR
     Jalankan browser
     ![Halaman Browser](image-1.png)
 Bagian 2 – Implementasi getServerSideProps pada server.tsx
+    ![Modifikasi Kode](image-2.png)
     Jalankan browser
+    ![Halaman Browser](image-3.png)
 Bagian 3 – Refactor Type ( produk type )
     Modifikasi Product.type.ts
     Modifikasi file server.tsx 
