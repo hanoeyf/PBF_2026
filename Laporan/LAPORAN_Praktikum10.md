@@ -20,9 +20,31 @@ Uji 1 – Tambah Data di Database
         ![/produk/server](image-5.png)
     • /products/static (SSG) → Data tidak berubah
         ![/produk/server](image-6.png)
-    Uji 2 – Build Ulang
+Uji 2 – Build Ulang
     1. Jalankan kembali:
         • npm run build
         • npm run start
     2. Refresh halaman static
         ![Halaman browser](image-8.png)
+
+D. Tugas Praktikum
+Tugas Individu
+1. Buat 3 halaman:
+    o CSR 
+    o SSR
+    o SSG
+    sudah di lakukan di langkah praktikum
+2. Lakukan pengujian:
+o Tambah data
+o Hapus data
+o Bandingkan hasil
+    ![Delete](image-12.png)
+    ![/produk](image-15.png)
+    ![/produk/server](image-16.png)
+    ![/produk/static](image-17.png)
+
+Hasilnya:
+    Halaman |	Tambah Data     |	Hapus Data
+    CSR	    |   langsung muncul	|   angsung hilang
+    SSR	    |   langsung muncul	|   langsung hilang
+    SSG	|   |   tidak muncul	|   tidak hilang
