@@ -2,7 +2,9 @@ Langkah Praktikum
 
 Bagian 1 – Membuat Dynamic Route
     - Buka file pages/products/[product].tsx dan modfikasi sbb ( line 20 )
+        ![Modifikasi Kode](image.png)
     - Jalankan browser http://localhost:3000/produk
+        ![Halaman Browser](image-1.png)
 Bagian 2 – Implementasi CSR (Client Rendering)
     o Modifikasi pada file [produk].tsx pada folder src/pages/produk/
     o Pada file produk.ts pada folder pages/api di rename menjadi [[...product]].ts
