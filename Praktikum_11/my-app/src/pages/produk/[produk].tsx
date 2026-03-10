@@ -16,11 +16,34 @@ const HalamanProduk = ({ product }: { product: ProductType }) => {
 
 export default HalamanProduk;
 
-export async function getServerSideProps ({ params }: { params: { produk: string}}){
-    const res = await fetch(`http://localhost:3000/api/produk/${params?.produk}`);
-    const respone = await res.json();
+// export async function getServerSideProps ({ params }: { params: { produk: string}}){
+//     const res = await fetch(`http://localhost:3000/api/produk/${params?.produk}`);
+//     const respone = await res.json();
 
-    return{
+//     return{
+//         props: {
+//             product: respone.data,
+//         },
+//     };
+// }
+
+export async function getStaticPaths() {
+    const res = await fetch(`http://localhost:3000/api/products`);
+    const respone = await res.json()
+
+    const paths = respone.data.map((product: ProductType) => ({
+        params: { produk: product.id }
+    }))
+    return {
+        paths,
+        fallback: false
+    }
+}
+
+export async function getStaticProps({ params }: { params: { produk: string } }) {
+    const res = await fetch(`http://localhost:3000/api/products/${params.produk}`);
+    const respone: { data: ProductType[] } = await res.json();   
+    return {
         props: {
             product: respone.data,
         },

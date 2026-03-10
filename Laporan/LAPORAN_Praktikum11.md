@@ -37,5 +37,8 @@ Bagian 3 – Implementasi SSR
         ![HalamanBrowser](image-16.png)
 Bagian 4 – Implementasi Static Site Generation (Dynamic SSG)
     o Buka file [produk].tsx dan modifikasi
+        ![Kode](image-18.png)
     o Buka file index.tsx pada folder src/views/DetailProduct dan modifikasi pada line 11
+        ![Kode](image-19.png)
     o Jalankan browser http://localhost:3000/produk
+        ![Halaman Browser](image-20.png)
