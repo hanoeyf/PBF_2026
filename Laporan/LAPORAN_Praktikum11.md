@@ -42,3 +42,30 @@ Bagian 4 – Implementasi Static Site Generation (Dynamic SSG)
         ![Kode](image-19.png)
     o Jalankan browser http://localhost:3000/produk
         ![Halaman Browser](image-20.png)
+        ![Halaman Browser](image-21.png)
+
+
+TABEL PERBANDINGAN 
+                            
+Aspek           |                      CSR                                         SSR                                  SSG
+Loading         |Halaman muncul dulu, data muncul setelah fetch | Data langsung ada saat halaman dibuka      | Halaman langsung tampil lengkap
+Build Required  |Tidak perlu build ulang                        | Tidak perlu build ulang                    | Perlu build ulang untuk update data
+SEO             |Kurang bagus karena data muncul setelah render | Sangat bagus karena HTML sudah berisi data | Sangat bagus karena HTML sudah statis
+Perubahan Data  | Data selalu terbaru karena fetch di client    | Data selalu terbaru karena fetch di server | Data tidak berubah sampai build ulang
+
+Pertanyaan Analisis
+
+1. Mengapa getStaticPaths wajib pada dynamic SSG?
+getStaticPaths wajib digunakan pada dynamic SSG karena Next.js perlu mengetahui semua path atau halaman yang harus dibuat saat proses build. Dengan fungsi ini, Next.js dapat mengambil daftar ID atau parameter yang ada di data sehingga halaman statis untuk setiap produk dapat dibuat terlebih dahulu sebelum aplikasi dijalankan
+
+2. Mengapa CSR membutuhkan loading state?
+CSR membutuhkan loading state karena data diambil setelah halaman berhasil dimuat di browser. Saat halaman pertama kali ditampilkan, data dari API belum tersedia sehingga perlu ditampilkan indikator loading agar pengguna mengetahui bahwa data sedang diproses atau dimuat
+
+3. Mengapa SSG tidak menampilkan produk baru tanpa build ulang?
+SSG tidak menampilkan produk baru tanpa build ulang karena halaman dibuat saat proses build dan disimpan sebagai file statis. Jika ada produk baru yang ditambahkan setelah proses build selesai, halaman tersebut tidak akan otomatis diperbarui sampai dilakukan build ulang pada aplikasi
+
+4. Mana metode terbaik untuk halaman detail e-commerce?
+Metode yang paling sesuai untuk halaman detail e-commerce adalah SSR karena data produk dapat diambil langsung dari server setiap kali pengguna membuka halaman. Dengan begitu informasi seperti harga, stok, atau detail produk selalu terbaru dan juga tetap baik untuk kebutuhan SEO
+
+5. Apa risiko menggunakan SSG untuk produk yang sering berubah?
+Risiko menggunakan SSG untuk produk yang sering berubah adalah informasi yang ditampilkan bisa menjadi tidak terbaru. Perubahan seperti harga, stok, atau produk baru tidak akan langsung terlihat oleh pengguna sampai aplikasi dibangun ulang, sehingga dapat menyebabkan informasi yang ditampilkan tidak akurat
