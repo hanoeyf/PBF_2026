@@ -26,7 +26,9 @@ Bagian 2 – Implementasi CSR (Client Rendering)
         ![Kode](image-12.png)
     o Jalankan browser http://localhost:3000/produk/
         ![Halaman Browser](image-11.png)
-    o Modifikasi file detailProduct.module.scss
+    o Modifikasi file detailProduct.module.scss dan file index.tsx
+        ![index.tsx](image-13.png)
+        ![Halaman Browser](image-14.png)
 Bagian 3 – Implementasi SSR
     o Modifikasi [produk].tsx pada folder src/pages/produk
     

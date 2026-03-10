@@ -4,7 +4,7 @@ import styles from "./detailProduct.module.scss";
 const DetailProduct = ({ products }: { products: ProductType }) => {
     return (
         <>
-            <h1>Detail Produk</h1>
+            <h1 className= {styles.title}>Detail Produk</h1>
             <div className={styles.produkdetail}>
                 <div className={styles.produkdetail__image}>
                     <img src={products.image} alt={products.name} />
