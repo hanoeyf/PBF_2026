@@ -31,8 +31,10 @@ Bagian 2 – Implementasi CSR (Client Rendering)
         ![Halaman Browser](image-14.png)
 Bagian 3 – Implementasi SSR
     o Modifikasi [produk].tsx pada folder src/pages/produk
-    
+        ![Kode](image-15.png)
     o Jalankan browser http://localhost:3000/produk/server
+        ![/produk/server](image-17.png)
+        ![HalamanBrowser](image-16.png)
 Bagian 4 – Implementasi Static Site Generation (Dynamic SSG)
     o Buka file [produk].tsx dan modifikasi
     o Buka file index.tsx pada folder src/views/DetailProduct dan modifikasi pada line 11
