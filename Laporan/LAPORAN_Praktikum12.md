@@ -16,9 +16,12 @@
         ![http://localhost:3000/api/revalidate?data=](image-7.png)
     Bagian 3 – Tambahkan Token Security
         Modifikasi file revalidate.ts
+        ![Modifikasi kode](image-8.png)
 
 => Pengujian Manual Revalidation
-
+    ![benar](image-10.png)
+    ![salah](image-9.png)
+    
 => Tugas Praktikum
     Tugas Individu
     1. Tambahkan lagi produk pada firebase
