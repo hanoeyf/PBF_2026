@@ -6,5 +6,5 @@ Bagian 2 – Struktur Dasar Middleware
 Bagian 3 – Redirect Sederhana
     ![Modifikasi Kode](image-2.png)
 Bagian 4 – Batasi Route Tertentu
-
+    ![Modifikasi kode](image-3.png)
 Bagian 5 – Simulasi Sistem Login
