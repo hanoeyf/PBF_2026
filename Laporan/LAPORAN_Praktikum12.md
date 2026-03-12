@@ -1,6 +1,10 @@
 => Implementasi ISR Otomatis
     Bagian 1 – Tambahkan revalidate
+        ![Kode](image.png)
     Bagian 2 – Pengujian ISR
+        ![npm run build](image-1.png)
+        ![npm run start](image-2.png)
+        ![Data Baru](image-3.png)
 
 => On-Demand Revalidation
     Bagian 1 – Buat API Revalidate
