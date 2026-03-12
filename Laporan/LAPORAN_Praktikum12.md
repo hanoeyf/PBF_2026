@@ -12,6 +12,8 @@
     Bagian 2 – Tambahkan Parameter Data
         Modifikasi file revalidate.ts
         ![Modifikasi kode](image-5.png)
+        ![http://localhost:3000/api/revalidate?data=produk](image-6.png)
+        ![http://localhost:3000/api/revalidate?data=](image-7.png)
     Bagian 3 – Tambahkan Token Security
         Modifikasi file revalidate.ts
 
