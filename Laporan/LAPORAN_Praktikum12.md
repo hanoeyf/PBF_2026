@@ -8,6 +8,7 @@
 
 => On-Demand Revalidation
     Bagian 1 – Buat API Revalidate
+        ![Kode](image-4.png)
     Bagian 2 – Tambahkan Parameter Data
         Modifikasi file revalidate.ts
     Bagian 3 – Tambahkan Token Security
