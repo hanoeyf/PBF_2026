@@ -11,6 +11,7 @@
         ![Kode](image-4.png)
     Bagian 2 – Tambahkan Parameter Data
         Modifikasi file revalidate.ts
+        ![Modifikasi kode](image-5.png)
     Bagian 3 – Tambahkan Token Security
         Modifikasi file revalidate.ts
 
