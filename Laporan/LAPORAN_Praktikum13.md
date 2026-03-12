@@ -8,3 +8,6 @@ Bagian 3 – Redirect Sederhana
 Bagian 4 – Batasi Route Tertentu
     ![Modifikasi kode](image-3.png)
 Bagian 5 – Simulasi Sistem Login
+    ![Modifikasi kode](image-4.png)
+    User diarahkan ke page Login ketika mengakses http://localhost:3000/auth/login
+    ![Halaman Browser](image-5.png)
