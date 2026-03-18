@@ -2,17 +2,15 @@ import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 import AppShell from '@/components/layouts/Appshell';
 import { useRouter } from 'next/router';
+import { SessionProvider } from 'next-auth/react';
 
-export default function App({ Component, pageProps }: AppProps) {
-  const router = useRouter();
-
-  if (router.pathname === "/404") {
-    return <Component {...pageProps} />;
-  }
+export default function App({ Component, pageProps: { session, ...pageProps } }: AppProps) {
 
   return (
-    <AppShell>
-      <Component {...pageProps} />
-    </AppShell>
+    <SessionProvider session={pageProps.session}>
+      <AppShell>
+        <Component {...pageProps} />
+      </AppShell>
+    </SessionProvider>
   );
 }
