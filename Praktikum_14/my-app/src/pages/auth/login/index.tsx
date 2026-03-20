@@ -1,12 +1,12 @@
-import TampilanLogin from "../../../views/auth/login";
+// import TampilanLogin from "../../../views/auth/login";
 
-const halamanLogin = () => {
+// const halamanLogin = () => {
 
-  return (
-      <>
-      <TampilanLogin />
-      </>
-  );
-};
+//   return (
+//       <>
+//       <TampilanLogin />
+//       </>
+//   );
+// };
 
-export default halamanLogin;
+// export default halamanLogin;
