@@ -8,7 +8,7 @@ export const authOptions: NextAuthOptions = {
   secret: process.env.NEXTAUTH_SECRET,
   providers: [
     CredentialsProvider({
-        name: "Credentials",
+        name: "credentials",
         credentials: {
             fullname: { label: "Full Name", type: "text"},
             email: { label: "Email", type: "email" },
@@ -32,17 +32,17 @@ export const authOptions: NextAuthOptions = {
 
   callbacks: {
     async jwt({ token, account, profile, user }: any) {
-        if (account.provider === "credentials" && user) {
+        if (account?.provider === "credentials" && user) {
             token.email = user.email
         }
-        return token;
+        return token
     },
     async session({ session, token }: any) {
         if (token.email) {
-            session.user.email = token.email;
+            session.user.email = token.email
         }
-        return session;
+        return session
     },
   },
 };
-export default NextAuth(authOptions);
+export default NextAuth(authOptions)
