@@ -11,10 +11,10 @@ export default function withAuth(
         if (requireAuth.includes(pathname)) {
             const token = await getToken({ 
                 req, 
-                secret: process.env.NEXTAUTH_SECRET 
+                secret: process.env.NEXTAUTH_SECRET,
             });
             if (!token) {
-                const loginUrl = new URL("/login", req.url);
+                const loginUrl = new URL("/", req.url);
                 return NextResponse.redirect(loginUrl);
             }
         }
