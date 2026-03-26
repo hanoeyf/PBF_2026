@@ -1,5 +1,5 @@
 import { getToken } from "next-auth/jwt";
-import { NextFetchEvent, NextMiddleware, NextResponse, NextRequest } from "next/server";
+import { NextFetchEvent, NextMiddleware, NextRequest, NextResponse } from "next/server";
 
 export default function withAuth(
     middleware: NextMiddleware, 
