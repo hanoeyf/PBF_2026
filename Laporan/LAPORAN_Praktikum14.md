@@ -28,3 +28,13 @@ Menambahkan Data Tambahan (Full Name)
         ![Kode](image-13.png)
     ![Sign In](image-10.png)
     ![Sign Out](image-11.png)
+
+Proteksi Halaman Profile
+    Buat Halaman Profile
+        pages/profile/index.tsx dan modifikasi file index.tsx
+            ![Kode](image-15.png)
+            ![Halaman Profile](image-14.png)
+    Buat Middleware Authorization
+        o Modifikasi withAuth.ts
+            ![Kode](image-16.png)
+        o Modifikasi file middleware.ts
