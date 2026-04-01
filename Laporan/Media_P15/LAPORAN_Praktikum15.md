@@ -72,8 +72,25 @@ Pengujian
     • 405 Method Not Allowed
 
 Pertanyaan Analisis
-    1. Mengapa password harus di-hash?
-    2. Apa perbedaan addDoc dan setDoc?
-    3. Mengapa perlu validasi method POST?
-    4. Apa risiko jika email tidak dicek unik?
-    5. Apa fungsi role pada user?
+1. Mengapa password harus di-hash?
+
+Password harus di-hash agar tidak disimpan dalam bentuk asli (plain text) di database. Dengan hashing, jika database bocor, password pengguna tetap aman karena sulit dikembalikan ke bentuk aslinya
+
+2. Apa perbedaan addDoc dan setDoc?
+addDoc: digunakan untuk menambahkan data dengan ID otomatis dari Firestore.
+setDoc: digunakan untuk menyimpan data dengan ID yang ditentukan sendiri
+
+3. Mengapa perlu validasi method POST?
+
+Validasi method POST diperlukan agar endpoint hanya menerima permintaan yang sesuai (misalnya untuk mengirim data) dan mencegah akses yang tidak diinginkan seperti GET, PUT, atau DELETE yang bisa menyebabkan error atau celah keamanan.
+
+4. Apa risiko jika email tidak dicek unik?
+bisa terjadi duplikasi akun
+pengguna bisa bingung saat login
+berpotensi terjadi masalah keamanan dan integritas data
+
+5. Apa fungsi role pada user?
+
+Role digunakan untuk menentukan hak akses pengguna dalam sistem, misal:
+admin: bisa mengelola data
+user: hanya bisa menggunakan fitur tertentu
