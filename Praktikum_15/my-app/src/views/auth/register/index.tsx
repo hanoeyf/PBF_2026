@@ -1,42 +1,61 @@
 import Link from "next/link";
-import { useRouter } from "next/router";
-import styles from "./register.module.scss";
+import style from "./register.module.scss";
 
 const TampilanRegister = () => {
-  const { push } = useRouter();
-
-  const handleRegister = () => {
-    push("/produk");
-  };
-
   return (
-    <div className={styles.register}>
-      <h1 className="text-3xl font-bold text-green-600">
-        Halaman Register
-      </h1>
+    <div className={style.register}>
+      <h1 className={style.register__title}>Halaman Register</h1>
+      <div className={style.register__form}>
+        <form action="">
+          <div className={style.register__form__item}>
+           <label htmlFor="email"
+           className={style.register__form__item__label}>
+            Email
+           </label>
+           <input 
+           type="email"
+           id="email"
+           name="email"
+           placeholder="email"
+           className={style.register__form__item__input}
+            />
+          </div>
 
-      <input type="text" placeholder="Username" />
-      <input type="email" placeholder="Email" />
-      <input type="password" placeholder="Password" />
+          <div className={style.register__form__item}>
+           <label htmlFor="Fullname"
+           className={style.register__form__item__label}>
+            Fullname
+           </label>
+           <input 
+           type="text"
+           id="Fullname"
+           name="Fullname"
+           placeholder="Fullname"
+           className={style.register__form__item__input}
+            />
+          </div>
 
-      <button onClick={handleRegister}>
-        Register
-      </button>
+          <div className={style.register__form__item}>
+           <label htmlFor="Password"
+           className={style.register__form__item__label}>
+            Password
+           </label>
+           <input 
+           type="password"
+           id="Password"
+           name="Password"
+           placeholder="Password"
+           className={style.register__form__item__input}
+            />
+          </div>
 
-      <br />
-
-      <h1
-        style={{
-          color: "blue",
-          border: "1px solid blue",
-          borderRadius: "5px",
-          padding: "5px",
-        }}
-      >
-        Sudah punya akun?
-      </h1>
-
-      <Link href="/auth/login">Ke Halaman Login</Link>
+          <button type="submit" className={style.register__form__item__button}>Register</button>
+        </form>
+        <br />
+        <p className={style.register__form__item__text}>
+          Sudah punya akun? <Link href="/auth/login">Ke Halaman Login</Link>
+        </p>
+      </div>
     </div>
   );
 };
