@@ -26,16 +26,23 @@ Langkah Praktikum
     Bagian 3 – Install bcrypt
         • npm install bcrypt --force
         • npm install --save-dev @types/bcrypt –force
-
+            ![install](image-9.png)
         • Buka file servicefirebase.ts pada folder src/utils/db dan modifikasi
+            ![modifikasi kode](image-10.png)
+            ![firebase](image-11.png)
+            -> Data user berhasil masuk ke firebase
 
-        • Jalankan browser http://localhost:3000/auth/register
-
-            o Line 34 rubah menjadi email
-
+        Namun saat memasukkan data yg sama tidak ada pemberitahuan pada
+layar maka dari itu perlu ada perubahan pada code index.tsx
+            ![Modifikasi kode](image-12.png)
+            ![Modifikasi kode](image-13.png)
         • Modifikasi juga pada register.module.scss
+            ![Modifikasi kode](image-14.png)
         • Jalankan browser http://localhost:3000/auth/register
+            ![Halaman broswer](image-15.png)
+                muncul norifikasi "User already exists" saat memasukkan data yang sudah pernah dipakai sebelumnya
         • Tambakan loading dengan menambahkan kode pada index.tsx
+            ![Modifikasi kode](image-16.png)
         • Jika berhasil maka hasilnya akan muncul loading saat klik register
 
 Pengujian
@@ -47,6 +54,7 @@ Pengujian
     • Data tersimpan di Firestore
     • Password ter-hash
     • Redirect ke login
+        ![halaman browser](image-17.png)
 
     Uji 2 – Email Sudah Ada
     Input:
@@ -54,11 +62,12 @@ Pengujian
     Hasil:
     • Error 400
     • Message: Email already exists
+        ![Halaman browser](image-18.png)
 
     Uji 3 – Method GET
     Akses:
     /api/register
-
+        ![Halaan broswer](image-19.png)
     Hasil:
     • 405 Method Not Allowed
 
