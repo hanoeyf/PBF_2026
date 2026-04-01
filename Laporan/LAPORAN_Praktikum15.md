@@ -14,12 +14,14 @@ Langkah Praktikum
 
     Bagian 2 – Membuat API Register
         o Buka file servicefirebase.ts pada folder src/utils/db dan modifikasi
-
+            ![Modifikasi kode](image-5.png)
         o Modifikasi file register.ts
-
+            ![Modifikasi kode](image-6.png)
         o Modifikasi index.tsx pada folder register ( tambahkan beberapa code)
-
+            ![Modifikasi kode](image-7.png)
         o Buka browser http://localhost:3000/auth/register
+            ![Halaman browser](image-8.png)
+            -> setelah form diisi browser mengarah ke halaman login
 
     Bagian 3 – Install bcrypt
         • npm install bcrypt --force
