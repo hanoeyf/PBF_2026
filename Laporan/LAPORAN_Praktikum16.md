@@ -25,7 +25,7 @@ BAGIAN 3 – Authorize di NextAuth (Database Login)
         ![Modifikasi kode](image-9.png)
 BAGIAN 4 – Tambahkan Role ke Token
     • JWT Callback pada file [...nextauth].ts Modifikasi menjadi
-
+        ![modifikasi kode](image-10.png)
     • Jalankan browser http://localhost:3000/auth/login
 BAGIAN 5 – Callback URL Logic
     • Modifikasi withAuth.ts pada folder src/middleware
