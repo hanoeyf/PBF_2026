@@ -2,16 +2,19 @@ Langkah Praktikum
 
 BAGIAN 1 – Custom Login Page
     Tambahkan custom page di NextAuth line 55-57
-        ![Modifikasi kode](image.png)
+        ![Modifikasi kode](image-6.png)
     • Jalankan browser http://localhost:3000/ dan klik sign in maka akan diarahkan ke
     login
-        ![Halaman Browser](image-1.png)
+        ![Halaman browser](image-5.png)
 BAGIAN 2 – Handle Login di Frontend
     • Copy paste isi dari register/index.tsx ke file login/index.tsx
-
+        ![Modifikasi kode](image-3.png)
     • Copy paste isi dari register/register.module.scss ke file login/login.module.scss
+        ![Modifikasi kode](image-2.png)
     • Semua text register pada file index.tsx pada folder login diubah menjadi login
+        ![Modifikasi kode](image-4.png)
     • Jalankan browser localhost:3000/auth/login. Tampilannya akan sama dengan register
+        ![Halaman Browser](image-1.png)
     • Pada tampilan login kita tidak perlu hapus fullname jadi pada folder
     views/auth/login/index.tsx hapus fullname
     Sehingga hasilnya seperti berikut :
