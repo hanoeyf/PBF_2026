@@ -15,12 +15,11 @@ BAGIAN 2 – Handle Login di Frontend
         ![Modifikasi kode](image-4.png)
     • Jalankan browser localhost:3000/auth/login. Tampilannya akan sama dengan register
         ![Halaman Browser](image-1.png)
-    • Pada tampilan login kita tidak perlu hapus fullname jadi pada folder
-    views/auth/login/index.tsx hapus fullname
-    Sehingga hasilnya seperti berikut :
     • Buka file index.tsx pada folder views/auth/login dan modifikasi codenya seperti
     berikut
+        ![Modifikasi kode](image-7.png)
     • Buka file servicefirebase.ts dan tambahkan code di line 25-38
+        ![Modifikasii kode](image-8.png)
 BAGIAN 3 – Authorize di NextAuth (Database Login)
     • Buka file [...nextauth].ts modifikasi menjadi berikut ( pada bagian providers )
 

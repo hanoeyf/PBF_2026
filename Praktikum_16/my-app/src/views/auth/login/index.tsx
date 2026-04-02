@@ -2,42 +2,42 @@ import Link from "next/link";
 import style from "./login.module.scss";
 import { useState } from "react";
 import { useRouter } from "next/router";
+import { signIn } from "next-auth/react";
 
 const TampilanLogin = () => {
   const [isLoading, setIsLoading] = useState(false);
-  const { push } = useRouter();
+  const { push, query } = useRouter();
+
+  const callbackUrl: any = query.callbackUrl || "/";
   const [error, setError] = useState("");
 
-  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: any) => {
+    event.preventDefault();
     setError("");
     setIsLoading(true);
-    event.preventDefault();
 
-    const form = event.currentTarget;
-    const formData = new FormData(event.currentTarget);
-    const email = formData.get("email") as string;
-    const password = formData.get("Password") as string;
+    try {
+      const res = await signIn("credentials", {
+        redirect: false,
+        email: event.target.email.value,
+        password: event.target.Password.value,
+        callbackUrl,
+      });
 
-    const response = await fetch("/api/login", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ email, password }),
-    });
-
-    if (response.status === 200) {
-      form.reset();
+      if (!res?.error) {
+        setIsLoading(false);
+        push(callbackUrl);
+      } else {
+        setIsLoading(false);
+        setError(res.error || "Login failed");
+      }
+    } catch (error) {
       setIsLoading(false);
-      push("/"); // redirect setelah login
-    } else {
-      setIsLoading(false);
-      setError(
-        response.status === 400 ? "Invalid credentials" : "An error occurred"
-      );
+      setError("wrong email or password");
     }
   };
 
+  // ⬇️ RETURN HARUS DI DALAM COMPONENT
   return (
     <div className={style.login}>
       {error && <p className={style.login__error}>{error}</p>}
