@@ -27,6 +27,8 @@ BAGIAN 4 – Tambahkan Role ke Token
     • JWT Callback pada file [...nextauth].ts Modifikasi menjadi
         ![modifikasi kode](image-10.png)
     • Jalankan browser http://localhost:3000/auth/login
+        ![Halaman broswser](image-12.png)
+        ![Halaman browser](image-11.png)
 BAGIAN 5 – Callback URL Logic
     • Modifikasi withAuth.ts pada folder src/middleware
 BAGIAN 6 – Membuat halaman Admin dan authoriz

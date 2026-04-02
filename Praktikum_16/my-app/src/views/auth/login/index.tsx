@@ -39,6 +39,7 @@ const TampilanLogin = () => {
 
   // ⬇️ RETURN HARUS DI DALAM COMPONENT
   return (
+    <>
     <div className={style.login}>
       {error && <p className={style.login__error}>{error}</p>}
 
@@ -95,6 +96,7 @@ const TampilanLogin = () => {
         </p>
       </div>
     </div>
+    </>
   );
 };
 
