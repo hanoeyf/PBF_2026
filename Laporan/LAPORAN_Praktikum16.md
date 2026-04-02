@@ -31,6 +31,7 @@ BAGIAN 4 – Tambahkan Role ke Token
         ![Halaman browser](image-11.png)
 BAGIAN 5 – Callback URL Logic
     • Modifikasi withAuth.ts pada folder src/middleware
+        ![Modifikasi kode](image-13.png)
 BAGIAN 6 – Membuat halaman Admin dan authoriz
     • Buat halaman admin
 
