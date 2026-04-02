@@ -22,7 +22,7 @@ BAGIAN 2 – Handle Login di Frontend
         ![Modifikasii kode](image-8.png)
 BAGIAN 3 – Authorize di NextAuth (Database Login)
     • Buka file [...nextauth].ts modifikasi menjadi berikut ( pada bagian providers )
-
+        ![Modifikasi kode](image-9.png)
 BAGIAN 4 – Tambahkan Role ke Token
     • JWT Callback pada file [...nextauth].ts Modifikasi menjadi
 
