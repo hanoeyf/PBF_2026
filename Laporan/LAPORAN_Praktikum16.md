@@ -5,6 +5,7 @@ BAGIAN 1 – Custom Login Page
         ![Modifikasi kode](image.png)
     • Jalankan browser http://localhost:3000/ dan klik sign in maka akan diarahkan ke
     login
+        ![Halaman Browser](image-1.png)
 BAGIAN 2 – Handle Login di Frontend
     • Copy paste isi dari register/index.tsx ke file login/index.tsx
 
