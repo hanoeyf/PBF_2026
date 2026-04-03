@@ -37,14 +37,17 @@ export const authOptions: NextAuthOptions = {
     })
   ],
   callbacks: {
-    async jwt({ token, account, profile, user }: any) {
-        if (account?.provider === "credentials" && user) {
-            token.email = user.email
-            token.fullname = user.fullname
-            token.role = user.role;
-        }
-        return token;
-    },
+    async jwt({ token, user }: any) {
+    // 🔥 saat login pertama
+    if (user) {
+        token.id = user.id;
+        token.email = user.email;
+        token.fullname = user.fullname;
+        token.role = user.role;
+    }
+
+    return token;
+},
     async session({ session, token }: any) {
         if (token.email) {
             session.user.email = token.email

@@ -1,26 +1,30 @@
+import { NextResponse } from "next/server";
+import type { NextRequest } from "next/server";
 import { getToken } from "next-auth/jwt";
-import { NextFetchEvent, NextMiddleware, NextRequest, NextResponse } from "next/server";
 
-export default function withAuth(
-  middleware: NextMiddleware,
-  requireAuth: string[] = [],
-) {
-  return async (req: NextRequest, next: NextFetchEvent) => {
-    const pathname = req.nextUrl.pathname;
-
-    if (requireAuth.includes(pathname)) {
-      const token = await getToken({
-        req,
+export async function middleware(request: NextRequest) {
+    const token: any = await getToken({
+        req: request,
         secret: process.env.NEXTAUTH_SECRET,
-      });
+    });
 
-      if (!token) {
-        const Url = new URL("/auth/login", req.url);
-        Url.searchParams.set("callbackUrl", encodeURI(req.url));
-        return NextResponse.redirect(Url);
-      }
+    const pathname = request.nextUrl.pathname;
+
+    // 🔥 belum login
+    if (!token) {
+        const loginUrl = new URL("/auth/login", request.url);
+        loginUrl.searchParams.set("callbackUrl", pathname);
+        return NextResponse.redirect(loginUrl);
     }
 
-    return middleware(req, next);
-  };
+    // 🔥 INI YANG PENTING BANGET (ROLE CHECK)
+    if (pathname.startsWith("/admin") && token.role !== "admin") {
+        return NextResponse.redirect(new URL("/", request.url));
+    }
+
+    return NextResponse.next();
 }
+
+export const config = {    
+    matcher: ["/produk", "/about", "/profile/:path*", "/admin/:path*"],
+};

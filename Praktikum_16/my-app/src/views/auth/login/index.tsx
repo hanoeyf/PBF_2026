@@ -8,7 +8,10 @@ const TampilanLogin = () => {
   const [isLoading, setIsLoading] = useState(false);
   const { push, query } = useRouter();
 
-  const callbackUrl: any = query.callbackUrl || "/";
+  // 🔥 fix callbackUrl biar aman
+  const callbackUrl =
+    typeof query.callbackUrl === "string" ? query.callbackUrl : "/";
+
   const [error, setError] = useState("");
 
   const handleSubmit = async (event: any) => {
@@ -20,16 +23,24 @@ const TampilanLogin = () => {
       const res = await signIn("credentials", {
         redirect: false,
         email: event.target.email.value,
-        password: event.target.Password.value,
-        callbackUrl,
+        password: event.target.password.value,
       });
 
       if (!res?.error) {
         setIsLoading(false);
-        push(callbackUrl);
+
+        // 🔥 ambil session untuk cek role
+        const session = await fetch("/api/auth/session").then(res => res.json());
+
+        if (session?.user?.role === "admin") {
+          push("/admin"); // 🔥 admin langsung ke admin
+        } else {
+          push(callbackUrl); // 🔥 user biasa
+        }
+
       } else {
         setIsLoading(false);
-        setError(res.error || "Login failed");
+        setError(res?.error || "Login failed");
       }
     } catch (error) {
       setIsLoading(false);
@@ -72,9 +83,9 @@ const TampilanLogin = () => {
             </label>
             <input
               type="password"
-              id="Password"
-              name="Password"
-              placeholder="Password"
+              id="password"
+              name="password"
+              placeholder="password"
               className={style.login__form__item__input}
             />
           </div>
@@ -91,7 +102,7 @@ const TampilanLogin = () => {
         <br />
 
         <p className={style.login__form__item__text}>
-          Belum punya akun?{" "}
+          tidak punya {"'"} akun?
           <Link href="/auth/register">Ke Halaman Register</Link>
         </p>
       </div>
