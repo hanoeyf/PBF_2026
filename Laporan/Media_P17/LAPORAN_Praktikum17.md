@@ -32,3 +32,13 @@ Simpan Data Google ke Database
     data akun googlenya masuk ke database maka anda telah berhasil
         ![akun google](image-11.png)
         berhasil tersimpan di database
+1. Apa perbedaan login credential dan login Google?
+Login credential menggunakan email dan password yang disimpan di database aplikasi, lalu diverifikasi saat login. Sedangkan login Google menggunakan akun pihak ketiga (OAuth), di mana proses autentikasi dilakukan oleh Google dan aplikasi hanya menerima data pengguna yang sudah terverifikasi.
+2. Mengapa data Google tetap perlu disimpan ke database?
+Data Google tetap perlu disimpan ke database agar aplikasi dapat mengenali pengguna, menyimpan informasi tambahan seperti role, serta menghubungkan user dengan fitur lain di dalam sistem.
+3. Apa fungsi JWT callback?
+JWT callback berfungsi untuk menyimpan data penting pengguna ke dalam token, seperti email, nama, dan role, sehingga data tersebut bisa digunakan selama session tanpa perlu mengambil ulang dari database.
+4. Mengapa perlu multi-role?
+Multi-role diperlukan untuk membedakan hak akses pengguna, misalnya admin memiliki akses penuh untuk mengelola data, sedangkan user hanya memiliki akses terbatas. Hal ini penting untuk menjaga keamanan dan struktur sistem.
+5. Apa risiko jika tidak menyimpan user ke database?
+Jika tidak menyimpan user ke database, sistem tidak dapat mengatur role, tidak bisa menyimpan informasi pengguna, dan kesulitan dalam mengelola fitur yang bergantung pada user. Selain itu, setiap login bisa dianggap sebagai pengguna baru sehingga sistem menjadi tidak efisien.
