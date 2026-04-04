@@ -23,10 +23,12 @@ Tambahkan Button Login Google
 Simpan Data Google ke Database
     o Buka file servicefirebase.ts pada folder src/utils/db/ dan tambahkan beberapa
     kode berikut
-
+        ![modifikasi kode](image-8.png)
     o Tambahkan juga code berikut
-
+        ![modifikasikode](image-9.png)
     o Panggil Service di JWT Callback buka file [...nextAuth].ts
-
+        ![modifikasi kode](image-10.png)
     o Jalankan browser dan login menggunakan akun google setelah cek di firebase, jika
     data akun googlenya masuk ke database maka anda telah berhasil
+        ![akun google](image-11.png)
+        berhasil tersimpan di database
