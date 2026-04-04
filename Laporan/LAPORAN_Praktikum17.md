@@ -11,15 +11,15 @@ Tambahkan Button Login Google
         ![modifikasi kode](image-3.png)
     2. Jalankan browser localhost:3000/auth/login masuk melalui sign in with google.Jika
     berhasil maka akan terhubung dengan akun google.
-
+        ![halaman browser](image-4.png)
     Note: data akun google tidak tersimpan dalam database
     3. Menampilkan image dari google
         o Buka file index.tsx dan tambahkan code berikut
-
+            ![modifikasi kode](image-5.png)
         o Buka file navbar.module.css dan tambahkan code berikut
-
+            ![modifikasi kode](image-6.png)
         o Jika berhasil maka tampillannya akan seperti berikut
-
+            ![halaman browser](image-7.png)
 Simpan Data Google ke Database
     o Buka file servicefirebase.ts pada folder src/utils/db/ dan tambahkan beberapa
     kode berikut
