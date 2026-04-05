@@ -15,10 +15,10 @@ PRAKTIKUM 1 – Image Optimization
 PRAKTIKUM 2 – Font Optimization
     A. Menggunakan next/font
         o Buka file index.tsx pada folder Appshell/index.tsx dan modifkasi
-
+            ![Modifikasi kode](image-3.png)
         o Jalankan browser localhost:3000/produk maka font akan berubah menjadi roboto
         untuk mengecek fontnya bisa menggunakan extension FontFinder
-        PRAKTIKUM 3 – Script Optimization
+PRAKTIKUM 3 – Script Optimization
 
     B. Menggunakan next/script
         o Buka file index.tsx pada folder layouts/Navbar dan modifikasi
