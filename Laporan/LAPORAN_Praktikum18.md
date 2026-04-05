@@ -18,8 +18,8 @@ PRAKTIKUM 2 – Font Optimization
             ![Modifikasi kode](image-3.png)
         o Jalankan browser localhost:3000/produk maka font akan berubah menjadi roboto
         untuk mengecek fontnya bisa menggunakan extension FontFinder
+            ![Halaman produk](image-4.png)
 PRAKTIKUM 3 – Script Optimization
-
     B. Menggunakan next/script
         o Buka file index.tsx pada folder layouts/Navbar dan modifikasi
 PRAKTIKUM 4 – Optimasi Avatar dengan next/image

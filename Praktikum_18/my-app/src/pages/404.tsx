@@ -1,29 +1,20 @@
-import Link from "next/link";
-import Head from "next/head";
+import Image from "next/image";
 import styles from "@/styles/404.module.scss";
 
 const Custom404 = () => {
     return (
-        <>
-            <Head>
-                <title>404 - Halaman Tidak Ditemukan</title>
-                <meta 
-                    name="description" 
-                    content="Halaman yang Anda cari tidak tersedia atau telah dipindahkan." 
-                />
-            </Head>
-
             <div className={styles.error}>
-                <img 
+                <Image 
                     src="/404.png" 
-                    alt="Ilustrasi halaman tidak ditemukan" 
+                    alt="404" 
+                    width={400}
+                    height={200}
                     className={styles.error__image} 
                 />
                 <h1>404 - Halaman Tidak Ditemukan</h1>
                 <p>Maaf, halaman yang Anda cari tidak ditemukan.</p>
-                 <Link href="/" className={styles.button}>Kembali ke Home</Link>
             </div>
-        </>
+        
     );
 };
 
