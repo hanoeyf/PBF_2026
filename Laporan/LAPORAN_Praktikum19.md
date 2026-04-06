@@ -27,8 +27,9 @@ PRAKTIKUM 4 – Coverage Report
 
 PRAKTIKUM 5 – Konfigurasi Coverage Lengkap
     • Update jest.config.mjs:
+        ![Modifikasi kode](image-7.png)
     • Jalankan npm run test:coverage
-    • Jika dilihat di index.htmlnya
+        ![coverage](image-8.png)
 
 PRAKTIKUM 6 – Testing dengan getByTestId
 
