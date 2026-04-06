@@ -8,11 +8,12 @@ PRAKTIKUM 1 – Setup Jest di Next.js
 PRAKTIKUM 2 – Struktur Folder Testing
 PRAKTIKUM 3 – Testing Halaman About
     Buat File Testing
+        ![kode](image-3.png)
     Jalankan Testing
         • npm run test
         • Jika berhasil:
         • PASS about.spec.tsx
-
+            ![PASS](image-4.png)
 PRAKTIKUM 4 – Coverage Report
     • Jalankan:
         o npm run test:coverage
