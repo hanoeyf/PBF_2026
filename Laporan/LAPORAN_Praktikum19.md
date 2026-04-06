@@ -34,15 +34,20 @@ PRAKTIKUM 5 – Konfigurasi Coverage Lengkap
 PRAKTIKUM 6 – Testing dengan getByTestId
 
     1. Tambahkan pada About Page
+        ![kode](image-9.png)
     2. Update Testing pada about.spec.tsx
+        ![Modifikasi kode](image-10.png)
         • Dicoba untuk di run
+            ![Berhasil](image-11.png)
         • Coba Jika dibuat Salah:
             - Rubah menjadi toBe("About")
+                ![Modifikasi kode](image-13.png)
         • Jalan kan dan Hasil:
             o FAIL
             Expected: "About"
             Received: "About Page"
-
+                ![Gagal](image-12.png)
+                
 PRAKTIKUM 7 – Testing Page dengan Router (Mocking)
 Kita coba untuk melakukan testing pada halaman produk
     1. Buat file product.spec.tsx

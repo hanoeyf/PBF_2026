@@ -6,7 +6,7 @@ const createJestConfig = nextJest({
 
 const config = {
     testEnvironment: "jsdom",
-    modulePaths: ["<rootDir>/src/"],
+    modulePaths: ['<rootDir>/src/'],
     collectCoverage: true,
     collectCoverageFrom: [
         '**/*.{ts,tsx}',
@@ -21,7 +21,11 @@ const config = {
         '!**/pages/api/**',
 
     ],
+    moduleNameMapper: {
+  '^@/(.*)$': '<rootDir>/src/$1',
+},
 
 }
+
 
 export default createJestConfig(config)
