@@ -1,11 +1,10 @@
 PRAKTIKUM 1 – Setup Jest di Next.js
-
     Install Dependencies
-
+        ![Install](image.png)
     Buat File Konfigurasi
-
+        ![Jest](image-1.png)
     Tambahkan Script di package.json
-
+        ![Modifikasi kode](image-2.png)
 PRAKTIKUM 2 – Struktur Folder Testing
 PRAKTIKUM 3 – Testing Halaman About
     Buat File Testing
