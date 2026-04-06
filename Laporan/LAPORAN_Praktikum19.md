@@ -58,23 +58,29 @@ Kita coba untuk melakukan testing pada halaman produk
     Solusi: Mock Next Router
     Tambahkan di file product.spec.tsx
         ![Modifikasi kode](image-15.png)
-        
+
 PRAKTIKUM 8 – Menangani Undefined Data
     • Jalankan npm run test:coverage maka akan muncul error
     • Jika muncul error:
         o Cannot read properties of undefined
         o Perbaiki di komponen:
             Pada file index.tsx pada folder pages/produk
-
             Jalankan npm run test:coverage maka akan muncul error
-
             Maka Solusinya perbaiki code pada file
-
+                ![Modifikasi kode](image-16.png)
             Note pastikan : comment pada code berikut pada 2 code testing
-
+            ![product](image-18.png)
+            ![about](image-19.png)
+            ![Berhasil](image-17.png)
 Diskusi & Refleksi
-1. Mengapa unit testing penting sebelum production?
-2. Mengapa branch coverage sulit mencapai 100%?
-3. Apa itu mocking?
-4. Kapan snapshot test digunakan?
-5. Apakah semua file harus dites?
+
+Mengapa unit testing penting sebelum production?
+Memastikan setiap bagian kode berjalan benar, menemukan bug lebih awal, dan memudahkan refaktor tanpa merusak fitur.
+Mengapa branch coverage sulit mencapai 100%?
+Karena beberapa jalur kondisi jarang terjadi, kode kompleks, atau memerlukan input khusus sulit direplikasi.
+Apa itu mocking?
+Teknik membuat tiruan fungsi/objek agar unit test tidak tergantung sumber nyata seperti API atau database.
+Kapan snapshot test digunakan?
+Untuk memeriksa perubahan tampilan UI atau output komponen agar tidak ada perubahan tak sengaja.
+Apakah semua file harus dites?
+Tidak. Fokus pada kode penting, logika bisnis, dan komponen utama; file konfigurasi atau jarang berubah bisa dilewatkan.

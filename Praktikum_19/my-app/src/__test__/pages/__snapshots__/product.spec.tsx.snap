@@ -11,9 +11,8 @@ exports[`Product Page renders the Product page correctly 1`] = `
         >
           <h1
             class="produk__title"
-            data-testid="title"
           >
-            Product Page
+            Daftar Produk
           </h1>
           <div
             class="produk__content"
@@ -46,9 +45,8 @@ exports[`Product Page renders the Product page correctly 1`] = `
       >
         <h1
           class="produk__title"
-          data-testid="title"
         >
-          Product Page
+          Daftar Produk
         </h1>
         <div
           class="produk__content"

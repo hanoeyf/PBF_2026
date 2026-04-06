@@ -1,21 +1,21 @@
-import { useRouter } from "next/router";
-import useSWR from "swr";
+import { useEffect, useState } from "react";
 import TampilanProduk from "../../views/product";
+import useSWR from "swr";
 import fetcher from "../../utlis/swr/fetcher";
+import { useRouter } from "next/router";
 
-const ProdukPage = () => {
+// const fetcher = (url: string) => fetch(url).then((res) => res.json());
+
+const kategori = () => {
   const { push } = useRouter();
-
+  const [products, setProducts] = useState([]);
   const { data, error, isLoading } = useSWR("/api/produk", fetcher);
-
-  // 🔥 handle data biar aman (anti undefined)
-  const products = isLoading || !data ? [] : data.data;
-
+ 
   return (
     <div>
-      <TampilanProduk products={products} />
+      <TampilanProduk products={isLoading ? [] : data?.data} />
     </div>
   );
 };
 
-export default ProdukPage;
+export default kategori;
