@@ -17,11 +17,11 @@ PRAKTIKUM 3 – Testing Halaman About
 PRAKTIKUM 4 – Coverage Report
     • Jalankan:
         o npm run test:coverage
-
+            ![test](image-5.png)
     • Akan muncul folder:
     o coverage/
     ▪ coverage/lcov-report/index.html ( buka di melalui explorer)
-
+        ![coverage](image-6.png)
     Target perusahaan biasanya:
     Minimum 80% coverage
 
