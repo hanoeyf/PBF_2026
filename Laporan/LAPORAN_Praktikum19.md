@@ -47,16 +47,18 @@ PRAKTIKUM 6 – Testing dengan getByTestId
             Expected: "About"
             Received: "About Page"
                 ![Gagal](image-12.png)
-                
+
 PRAKTIKUM 7 – Testing Page dengan Router (Mocking)
 Kita coba untuk melakukan testing pada halaman produk
     1. Buat file product.spec.tsx
     2. Tambahkan kode berikut
-    3. Ketika testing halaman Product, sering muncul error:
+        ![kode](image-14.png)
+    3. Ketika testing halaman Product, sering muncul error
         • NextRouter was not mounted
     Solusi: Mock Next Router
     Tambahkan di file product.spec.tsx
-
+        ![Modifikasi kode](image-15.png)
+        
 PRAKTIKUM 8 – Menangani Undefined Data
     • Jalankan npm run test:coverage maka akan muncul error
     • Jika muncul error:

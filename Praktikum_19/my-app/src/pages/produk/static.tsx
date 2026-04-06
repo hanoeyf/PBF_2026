@@ -1,6 +1,6 @@
 import TampilaProduk from "../../views/product";
 import { ProductType } from "../../types/Product.type";
-import { revalidateEvents } from "swr/dist/_internal";
+// import { revalidateEvents } from "swr/dist/_internal";
 
 const halamanProdukStatic = (props:{products: ProductType[]}) => {  
     const {products} = props;
