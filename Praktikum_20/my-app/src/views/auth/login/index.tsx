@@ -51,70 +51,71 @@ const TampilanLogin = () => {
   // ⬇️ RETURN HARUS DI DALAM COMPONENT
   return (
     <>
-    <div className={style.login}>
-      {error && <p className={style.login__error}>{error}</p>}
+      <div className={style.login}>
+        {error && <p className={style.login__error}>{error}</p>}
 
-      <h1 className={style.login__title}>Halaman Login</h1>
+        <h1 className={style.login__title}>Halaman Login</h1>
 
-      <div className={style.login__form}>
-        <form onSubmit={handleSubmit}>
-          <div className={style.login__form__item}>
-            <label
-              htmlFor="email"
-              className={style.login__form__item__label}
+        <div className={style.login__form}>
+          <form onSubmit={handleSubmit}>
+            <div className={style.login__form__item}>
+              <label
+                htmlFor="email"
+                className={style.login__form__item__label}
+              >
+                Email
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="email"
+                className={style.login__form__item__input}
+              />
+            </div>
+
+            <div className={style.login__form__item}>
+              <label
+                htmlFor="Password"
+                className={style.login__form__item__label}
+              >
+                Password
+              </label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="password"
+                className={style.login__form__item__input}
+              />
+            </div>
+
+            <button
+              type="submit"
+              className={style.login__form__item__button}
+              disabled={isLoading}
             >
-              Email
-            </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="email"
-              className={style.login__form__item__input}
-            />
-          </div>
+              {isLoading ? "Loading..." : "Login"}
+            </button>
+            <br /> <br />
+            <button
+              type="button"
+              onClick={() => signIn("google", { callbackUrl, redirect: false })}
+              className={style.login__form__item__button}
 
-          <div className={style.login__form__item}>
-            <label
-              htmlFor="Password"
-              className={style.login__form__item__label}
             >
-              Password
-            </label>
-            <input
-              type="password"
-              id="password"
-              name="password"
-              placeholder="password"
-              className={style.login__form__item__input}
-            />
-          </div>
+              Sign in with Google
+            </button>
+          </form>
 
-          <button
-            type="submit"
-            className={style.login__form__item__button}
-            disabled={isLoading}
-          >
-            {isLoading ? "Loading..." : "Login"}
-          </button>{" "}
-          <br /> <br />
-          <button 
-          onClick={()=> signIn("google", {callbackUrl, redirect: false})}
-          className={style.login__form__item__button}
-          disabled={isLoading}
-          >
-           {isLoading ? "Loading..." : "Sign in with Google"}
-          </button>
-        </form>
+          <br />
 
-        <br />
-
-        <p className={style.login__form__item__text}>
-          tidak punya {"'"} akun?{" "}
-          <Link href="/auth/register">Ke Halaman Register</Link>
-        </p>
+          <p className={style.login__form__item__text}>
+            tidak punya {"'"} akun?{" "}
+            <Link href="/auth/register">Ke Halaman Register</Link>
+          </p>
+        </div>
       </div>
-    </div>
     </>
   );
 };

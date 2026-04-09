@@ -24,46 +24,38 @@ PRAKTIKUM 2 – Deployment ke Vercel
             Deploy berhasil
             ![deploy](image-1.png)
 PRAKTIKUM 3 – Menambahkan Environment Variable di Vercel
-    ![vercel](image.png)
+    ![Env Variabel](image-2.png)
 PRAKTIKUM 4 – Konfigurasi Google OAuth Production
-
+    ![Client ID](image-3.png)
+    ![Modifikasi kode](image-4.png)
 PRAKTIKUM 5 – Pengujian Setelah Deployment
-
     Coba akses:
     • /
     • /about
+        ![about](image-6.png)
     • /product
+        ![produk](image-5.png)
     • /profile
+        ![profile](image-7.png)
     • Login Google
+        ![google](image-10.png)
     • Login credential biasa
+        ![login](image-8.png)
+        ![login](image-9.png)
     Pastikan:
     • SSR berjalan
     • API tidak lagi localhost
     • Database terkoneksi
     • Google login berhasil
 
-Analisis Konsep
-Konsep Penjelasan
-SSG Data diambil saat build
-SSR Data diambil saat request
-CSR Data diambil di browser
-Environment Variable Variabel rahasia/configuration
-Redeploy Build ulang setelah perubahan
-OAuth Production Harus update origin & callback
-
-Tugas Praktikum
-1. Deploy project Next.js ke Vercel
-2. Pastikan API tidak menggunakan localhost
-3. Konfigurasikan Google OAuth production
-4. Lakukan minimal 1 redeploy
-5. Dokumentasikan:
-o Screenshot dashboard Vercel
-o URL hasil deployment
-o Screenshot login Google berhasil
-
 Refleksi & Diskusi
 1. Mengapa localhost tidak boleh digunakan di production?
+Localhost tidak boleh digunakan di production karena hanya bisa diakses dari komputer sendiri. User lain tidak bisa membuka aplikasi jika masih menggunakan localhost, sehingga harus menggunakan domain atau server publik.
 2. Mengapa SSG bisa gagal saat build?
+SSG bisa gagal saat build karena proses pengambilan data dilakukan saat build. Jika API error, data tidak tersedia, atau ada kesalahan kode, maka proses build akan gagal.
 3. Apa perbedaan SSR dan SSG saat deployment?
+SSR membuat halaman setiap ada request dari user sehingga membutuhkan server aktif, sedangkan SSG membuat halaman saat build menjadi file statis sehingga lebih cepat saat diakses.
 4. Mengapa perlu redeploy setelah menambahkan environment?
+Perlu redeploy karena environment variable hanya dibaca saat proses build. Jika tidak redeploy, perubahan tidak akan diterapkan pada aplikasi.
 5. Apa fungsi redirect URI pada OAuth?
+Redirect URI berfungsi untuk mengarahkan user kembali ke aplikasi setelah login dan membawa data autentikasi seperti token atau kode otorisasi.
