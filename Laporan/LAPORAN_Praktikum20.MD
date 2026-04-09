@@ -21,6 +21,8 @@ PRAKTIKUM 2 – Deployment ke Vercel
                     ![modifikasi kode](image-4.png)
                 o pada file server.tsx
                     ![Modifikasi kode](image-5.png)
+            Deploy berhasil
+            ![deploy](image-1.png)
 PRAKTIKUM 3 – Menambahkan Environment Variable di Vercel
     ![vercel](image.png)
 PRAKTIKUM 4 – Konfigurasi Google OAuth Production
