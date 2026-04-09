@@ -7,6 +7,7 @@ const createJestConfig = nextJest({
 const config = {
     testEnvironment: "jsdom",
     modulePaths: ['<rootDir>/src/'],
+    setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
     collectCoverage: true,
     collectCoverageFrom: [
         '**/*.{ts,tsx}',
@@ -22,8 +23,10 @@ const config = {
 
     ],
     moduleNameMapper: {
-  '^@/(.*)$': '<rootDir>/src/$1',
-},
+      '^@/(.*)$': '<rootDir>/src/$1',
+      '^.+\\.(css|scss|sass)$': '<rootDir>/__mocks__/styleMock.js',
+      '^.+\\.(png|jpg|jpeg|gif|webp|svg)$': '<rootDir>/__mocks__/fileMock.js',
+    },
 
 }
 
